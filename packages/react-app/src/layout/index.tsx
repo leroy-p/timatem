@@ -12,7 +12,6 @@ interface IProps {
 export default function Layout({ children }: IProps) {
   return (
     <Container>
-      <Header />
       <Main>{children}</Main>
       <Footer />
     </Container>

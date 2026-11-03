@@ -1,13 +1,13 @@
 {
-  "name": "react-starter",
+  "name": "timatem",
   "version": "1.0.0",
   "private": true,
   "engines": {
     "node": ">=26.13.0 <27"
   },
   "scripts": {
-    "build:react-app": "npm run build --workspace @react-starter/react-app",
-    "format": "npm exec --workspace @react-starter/react-app -- biome check --write ."
+    "build:react-app": "npm run build --workspace @timatem/react-app",
+    "format": "npm exec --workspace @timatem/react-app -- biome check --write ."
   },
   "workspaces": [
     "packages/react-app"

@@ -1,4 +1,4 @@
-name: Deploy react-starter to Cloudflare Pages
+name: Deploy timatem to Cloudflare Pages
 
 on:
   push:
@@ -39,7 +39,7 @@ jobs:
       - name: Deploy Cloudflare Page
         working-directory: packages/react-app
         run: |
-          if ! npx wrangler pages project list | grep -qw "react-starter"; then
-            npx wrangler pages project create react-starter --production-branch=${{ github.ref_name }}
+          if ! npx wrangler pages project list | grep -qw "timatem"; then
+            npx wrangler pages project create timatem --production-branch=${{ github.ref_name }}
           fi
-            npx wrangler pages deploy dist --project-name=react-starter --branch=${{ github.ref_name }}
+            npx wrangler pages deploy dist --project-name=timatem --branch=${{ github.ref_name }}

@@ -1,4 +1,4 @@
-# React Starter
+# Timatem
 
 Template repository for React projects using:
 - React + TypeScript

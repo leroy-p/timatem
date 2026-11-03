@@ -1,17 +1,30 @@
 import styled from 'styled-components'
-import logo from '../assets/images/logo512.png'
-import { useI18n } from '../hooks/use-i18n'
+import GameResult from '../components/game-result'
+import PlayerForm from '../components/player-form'
+import players from '../data/players.json'
+import themes from '../data/themes.json'
+import { useGame } from '../hooks/use-game'
 import Layout from '../layout'
 
 export default function Root() {
-  const { t } = useI18n()
+  const game = useGame(players, themes)
 
   return (
     <Layout>
       <Container>
-        <h6>{t('root.title')}</h6>
-        <p>{t('root.message')}</p>
-        <img alt="" src={logo} />
+        <h1>Titatem</h1>
+        {game.result ? (
+          <GameResult {...game.result} onDraw={game.draw} onReset={game.reset} />
+        ) : (
+          <PlayerForm
+            players={players}
+            selected={game.selected}
+            canStart={game.canStart}
+            onSelect={game.selectPlayer}
+            onStart={game.draw}
+          />
+        )}
+        {game.error && <p role="alert">{game.error}</p>}
       </Container>
     </Layout>
   )
@@ -22,19 +35,8 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
-  justify-content: center;
   width: 100%;
-
-  & > h6 {
-    font-size: 48px;
-  }
-
-  & > p {
-    font-size: 24px;
-  }
-
-  & > img {
-    height: 72px;
-    width: auto;
-  }
+  padding: 24px 16px;
+  box-sizing: border-box;
+  color: #f4f3ff;
 `
