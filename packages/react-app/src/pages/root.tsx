@@ -12,7 +12,7 @@ export default function Root() {
   return (
     <Layout>
       <Container>
-        <h1>Titatem</h1>
+        <h1>Timatem</h1>
         {game.result ? (
           <GameResult {...game.result} onDraw={game.draw} onReset={game.reset} />
         ) : (

@@ -16,7 +16,6 @@ const routes: IRouteParams[] = [
   {
     component: <Root />,
     path: RoutePath.ROOT,
-    pageKey: 'root',
   },
 ]
 
