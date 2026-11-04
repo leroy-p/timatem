@@ -1,7 +1,10 @@
 import { act, renderHook } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
 import players from '../data/players.json'
-import themes from '../data/themes.json'
+import themeData from '../data/themes.json'
+
+const themes = themeData.map((theme) => theme.label)
+
 import { getAssignments, roles, useGame } from '../hooks/use-game'
 
 describe('game draw', () => {

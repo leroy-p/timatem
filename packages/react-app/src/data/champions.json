@@ -1,0 +1,1953 @@
+[
+  {
+    "id": "Aatrox",
+    "name": "Aatrox",
+    "roles": [
+      "top"
+    ],
+    "classes": [
+      "Fighter"
+    ]
+  },
+  {
+    "id": "Ahri",
+    "name": "Ahri",
+    "roles": [
+      "mid"
+    ],
+    "classes": [
+      "Mage",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Akali",
+    "name": "Akali",
+    "roles": [
+      "top",
+      "mid"
+    ],
+    "classes": [
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Akshan",
+    "name": "Akshan",
+    "roles": [
+      "top",
+      "mid"
+    ],
+    "classes": [
+      "Marksman",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Alistar",
+    "name": "Alistar",
+    "roles": [
+      "support"
+    ],
+    "classes": [
+      "Tank",
+      "Support"
+    ]
+  },
+  {
+    "id": "Ambessa",
+    "name": "Ambessa",
+    "roles": [
+      "top"
+    ],
+    "classes": [
+      "Fighter",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Amumu",
+    "name": "Amumu",
+    "roles": [
+      "jungle",
+      "support"
+    ],
+    "classes": [
+      "Tank",
+      "Support"
+    ]
+  },
+  {
+    "id": "Anivia",
+    "name": "Anivia",
+    "roles": [
+      "mid"
+    ],
+    "classes": [
+      "Mage"
+    ]
+  },
+  {
+    "id": "Annie",
+    "name": "Annie",
+    "roles": [
+      "mid"
+    ],
+    "classes": [
+      "Mage",
+      "Support"
+    ]
+  },
+  {
+    "id": "Aphelios",
+    "name": "Aphelios",
+    "roles": [
+      "bot"
+    ],
+    "classes": [
+      "Marksman"
+    ]
+  },
+  {
+    "id": "Ashe",
+    "name": "Ashe",
+    "roles": [
+      "bot",
+      "support"
+    ],
+    "classes": [
+      "Marksman",
+      "Support"
+    ]
+  },
+  {
+    "id": "AurelionSol",
+    "name": "Aurelion Sol",
+    "roles": [
+      "mid"
+    ],
+    "classes": [
+      "Mage"
+    ]
+  },
+  {
+    "id": "Aurora",
+    "name": "Aurora",
+    "roles": [
+      "top",
+      "mid"
+    ],
+    "classes": [
+      "Mage",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Azir",
+    "name": "Azir",
+    "roles": [
+      "mid"
+    ],
+    "classes": [
+      "Mage",
+      "Marksman"
+    ]
+  },
+  {
+    "id": "Bard",
+    "name": "Bard",
+    "roles": [
+      "support"
+    ],
+    "classes": [
+      "Support",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Belveth",
+    "name": "Bel'Veth",
+    "roles": [
+      "jungle"
+    ],
+    "classes": [
+      "Fighter"
+    ]
+  },
+  {
+    "id": "Blitzcrank",
+    "name": "Blitzcrank",
+    "roles": [
+      "support"
+    ],
+    "classes": [
+      "Tank",
+      "Support"
+    ]
+  },
+  {
+    "id": "Brand",
+    "name": "Brand",
+    "roles": [
+      "jungle",
+      "mid",
+      "support"
+    ],
+    "classes": [
+      "Mage",
+      "Support"
+    ]
+  },
+  {
+    "id": "Braum",
+    "name": "Braum",
+    "roles": [
+      "support"
+    ],
+    "classes": [
+      "Tank",
+      "Support"
+    ]
+  },
+  {
+    "id": "Briar",
+    "name": "Briar",
+    "roles": [
+      "jungle"
+    ],
+    "classes": [
+      "Fighter",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Caitlyn",
+    "name": "Caitlyn",
+    "roles": [
+      "bot"
+    ],
+    "classes": [
+      "Marksman"
+    ]
+  },
+  {
+    "id": "Camille",
+    "name": "Camille",
+    "roles": [
+      "top"
+    ],
+    "classes": [
+      "Fighter",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Cassiopeia",
+    "name": "Cassiopeia",
+    "roles": [
+      "mid"
+    ],
+    "classes": [
+      "Mage"
+    ]
+  },
+  {
+    "id": "Chogath",
+    "name": "Cho'Gath",
+    "roles": [
+      "top",
+      "jungle",
+      "mid"
+    ],
+    "classes": [
+      "Tank",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Corki",
+    "name": "Corki",
+    "roles": [
+      "mid",
+      "bot"
+    ],
+    "classes": [
+      "Marksman",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Darius",
+    "name": "Darius",
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "classes": [
+      "Fighter",
+      "Tank"
+    ]
+  },
+  {
+    "id": "Diana",
+    "name": "Diana",
+    "roles": [
+      "jungle",
+      "mid"
+    ],
+    "classes": [
+      "Fighter",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "DrMundo",
+    "name": "Dr. Mundo",
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "classes": [
+      "Tank",
+      "Fighter"
+    ]
+  },
+  {
+    "id": "Draven",
+    "name": "Draven",
+    "roles": [
+      "bot"
+    ],
+    "classes": [
+      "Marksman"
+    ]
+  },
+  {
+    "id": "Ekko",
+    "name": "Ekko",
+    "roles": [
+      "jungle",
+      "mid"
+    ],
+    "classes": [
+      "Assassin",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Elise",
+    "name": "Elise",
+    "roles": [
+      "jungle"
+    ],
+    "classes": [
+      "Assassin",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Evelynn",
+    "name": "Evelynn",
+    "roles": [
+      "jungle"
+    ],
+    "classes": [
+      "Assassin",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Ezreal",
+    "name": "Ezreal",
+    "roles": [
+      "bot"
+    ],
+    "classes": [
+      "Marksman",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Fiddlesticks",
+    "name": "Fiddlesticks",
+    "roles": [
+      "jungle",
+      "support"
+    ],
+    "classes": [
+      "Mage",
+      "Support"
+    ]
+  },
+  {
+    "id": "Fiora",
+    "name": "Fiora",
+    "roles": [
+      "top"
+    ],
+    "classes": [
+      "Fighter",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Fizz",
+    "name": "Fizz",
+    "roles": [
+      "mid"
+    ],
+    "classes": [
+      "Assassin",
+      "Fighter"
+    ]
+  },
+  {
+    "id": "Galio",
+    "name": "Galio",
+    "roles": [
+      "mid",
+      "support"
+    ],
+    "classes": [
+      "Tank",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Gangplank",
+    "name": "Gangplank",
+    "roles": [
+      "top"
+    ],
+    "classes": [
+      "Fighter"
+    ]
+  },
+  {
+    "id": "Garen",
+    "name": "Garen",
+    "roles": [
+      "top"
+    ],
+    "classes": [
+      "Fighter",
+      "Tank"
+    ]
+  },
+  {
+    "id": "Gnar",
+    "name": "Gnar",
+    "roles": [
+      "top"
+    ],
+    "classes": [
+      "Fighter",
+      "Tank"
+    ]
+  },
+  {
+    "id": "Gragas",
+    "name": "Gragas",
+    "roles": [
+      "top",
+      "jungle",
+      "mid",
+      "support"
+    ],
+    "classes": [
+      "Fighter",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Graves",
+    "name": "Graves",
+    "roles": [
+      "jungle"
+    ],
+    "classes": [
+      "Marksman"
+    ]
+  },
+  {
+    "id": "Gwen",
+    "name": "Gwen",
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "classes": [
+      "Fighter"
+    ]
+  },
+  {
+    "id": "Hecarim",
+    "name": "Hecarim",
+    "roles": [
+      "jungle"
+    ],
+    "classes": [
+      "Fighter",
+      "Tank"
+    ]
+  },
+  {
+    "id": "Heimerdinger",
+    "name": "Heimerdinger",
+    "roles": [
+      "top",
+      "mid",
+      "support"
+    ],
+    "classes": [
+      "Mage",
+      "Support"
+    ]
+  },
+  {
+    "id": "Hwei",
+    "name": "Hwei",
+    "roles": [
+      "mid",
+      "bot",
+      "support"
+    ],
+    "classes": [
+      "Mage",
+      "Support"
+    ]
+  },
+  {
+    "id": "Illaoi",
+    "name": "Illaoi",
+    "roles": [
+      "top"
+    ],
+    "classes": [
+      "Fighter",
+      "Tank"
+    ]
+  },
+  {
+    "id": "Irelia",
+    "name": "Irelia",
+    "roles": [
+      "top",
+      "mid"
+    ],
+    "classes": [
+      "Fighter",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Ivern",
+    "name": "Ivern",
+    "roles": [
+      "jungle",
+      "support"
+    ],
+    "classes": [
+      "Support",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Janna",
+    "name": "Janna",
+    "roles": [
+      "support"
+    ],
+    "classes": [
+      "Support",
+      "Mage"
+    ]
+  },
+  {
+    "id": "JarvanIV",
+    "name": "Jarvan IV",
+    "roles": [
+      "jungle"
+    ],
+    "classes": [
+      "Fighter",
+      "Tank"
+    ]
+  },
+  {
+    "id": "Jax",
+    "name": "Jax",
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "classes": [
+      "Fighter"
+    ]
+  },
+  {
+    "id": "Jayce",
+    "name": "Jayce",
+    "roles": [
+      "top",
+      "mid"
+    ],
+    "classes": [
+      "Fighter",
+      "Marksman"
+    ]
+  },
+  {
+    "id": "Jhin",
+    "name": "Jhin",
+    "roles": [
+      "bot"
+    ],
+    "classes": [
+      "Marksman",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Jinx",
+    "name": "Jinx",
+    "roles": [
+      "bot"
+    ],
+    "classes": [
+      "Marksman"
+    ]
+  },
+  {
+    "id": "KSante",
+    "name": "K'Santé",
+    "roles": [
+      "top"
+    ],
+    "classes": [
+      "Tank",
+      "Fighter"
+    ]
+  },
+  {
+    "id": "Kaisa",
+    "name": "Kai'Sa",
+    "roles": [
+      "bot"
+    ],
+    "classes": [
+      "Marksman",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Kalista",
+    "name": "Kalista",
+    "roles": [
+      "bot"
+    ],
+    "classes": [
+      "Marksman"
+    ]
+  },
+  {
+    "id": "Karma",
+    "name": "Karma",
+    "roles": [
+      "mid",
+      "support"
+    ],
+    "classes": [
+      "Mage",
+      "Support"
+    ]
+  },
+  {
+    "id": "Karthus",
+    "name": "Karthus",
+    "roles": [
+      "jungle",
+      "bot"
+    ],
+    "classes": [
+      "Mage"
+    ]
+  },
+  {
+    "id": "Kassadin",
+    "name": "Kassadin",
+    "roles": [
+      "mid"
+    ],
+    "classes": [
+      "Assassin",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Katarina",
+    "name": "Katarina",
+    "roles": [
+      "mid"
+    ],
+    "classes": [
+      "Assassin",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Kayle",
+    "name": "Kayle",
+    "roles": [
+      "top",
+      "mid"
+    ],
+    "classes": [
+      "Marksman",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Kayn",
+    "name": "Kayn",
+    "roles": [
+      "jungle"
+    ],
+    "classes": [
+      "Fighter",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Kennen",
+    "name": "Kennen",
+    "roles": [
+      "top",
+      "mid"
+    ],
+    "classes": [
+      "Mage"
+    ]
+  },
+  {
+    "id": "Khazix",
+    "name": "Kha'Zix",
+    "roles": [
+      "jungle"
+    ],
+    "classes": [
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Kindred",
+    "name": "Kindred",
+    "roles": [
+      "jungle"
+    ],
+    "classes": [
+      "Marksman"
+    ]
+  },
+  {
+    "id": "Kled",
+    "name": "Kled",
+    "roles": [
+      "top"
+    ],
+    "classes": [
+      "Fighter"
+    ]
+  },
+  {
+    "id": "KogMaw",
+    "name": "Kog'Maw",
+    "roles": [
+      "mid",
+      "bot"
+    ],
+    "classes": [
+      "Marksman",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Leblanc",
+    "name": "LeBlanc",
+    "roles": [
+      "mid"
+    ],
+    "classes": [
+      "Assassin",
+      "Mage"
+    ]
+  },
+  {
+    "id": "LeeSin",
+    "name": "Lee Sin",
+    "roles": [
+      "jungle"
+    ],
+    "classes": [
+      "Fighter",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Leona",
+    "name": "Leona",
+    "roles": [
+      "support"
+    ],
+    "classes": [
+      "Tank",
+      "Support"
+    ]
+  },
+  {
+    "id": "Lillia",
+    "name": "Lillia",
+    "roles": [
+      "jungle"
+    ],
+    "classes": [
+      "Fighter",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Lissandra",
+    "name": "Lissandra",
+    "roles": [
+      "mid",
+      "support"
+    ],
+    "classes": [
+      "Mage"
+    ]
+  },
+  {
+    "id": "Locke",
+    "name": "Locke",
+    "roles": [],
+    "classes": [
+      "Assassin",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Lucian",
+    "name": "Lucian",
+    "roles": [
+      "mid",
+      "bot"
+    ],
+    "classes": [
+      "Marksman",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Lulu",
+    "name": "Lulu",
+    "roles": [
+      "support"
+    ],
+    "classes": [
+      "Support",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Lux",
+    "name": "Lux",
+    "roles": [
+      "mid",
+      "bot",
+      "support"
+    ],
+    "classes": [
+      "Mage",
+      "Support"
+    ]
+  },
+  {
+    "id": "Malphite",
+    "name": "Malphite",
+    "roles": [
+      "top",
+      "mid",
+      "support"
+    ],
+    "classes": [
+      "Tank",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Malzahar",
+    "name": "Malzahar",
+    "roles": [
+      "mid"
+    ],
+    "classes": [
+      "Mage"
+    ]
+  },
+  {
+    "id": "Maokai",
+    "name": "Maokai",
+    "roles": [
+      "jungle",
+      "support"
+    ],
+    "classes": [
+      "Tank",
+      "Support"
+    ]
+  },
+  {
+    "id": "MasterYi",
+    "name": "Maître Yi",
+    "roles": [
+      "jungle"
+    ],
+    "classes": [
+      "Fighter",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Mel",
+    "name": "Mel",
+    "roles": [
+      "mid"
+    ],
+    "classes": [
+      "Mage",
+      "Support"
+    ]
+  },
+  {
+    "id": "Milio",
+    "name": "Milio",
+    "roles": [
+      "support"
+    ],
+    "classes": [
+      "Support",
+      "Mage"
+    ]
+  },
+  {
+    "id": "MissFortune",
+    "name": "Miss Fortune",
+    "roles": [
+      "bot"
+    ],
+    "classes": [
+      "Marksman",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Mordekaiser",
+    "name": "Mordekaiser",
+    "roles": [
+      "top"
+    ],
+    "classes": [
+      "Fighter",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Morgana",
+    "name": "Morgana",
+    "roles": [
+      "jungle",
+      "mid",
+      "support"
+    ],
+    "classes": [
+      "Support",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Naafiri",
+    "name": "Naafiri",
+    "roles": [
+      "jungle",
+      "mid"
+    ],
+    "classes": [
+      "Assassin",
+      "Fighter"
+    ]
+  },
+  {
+    "id": "Nami",
+    "name": "Nami",
+    "roles": [
+      "support"
+    ],
+    "classes": [
+      "Support",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Nasus",
+    "name": "Nasus",
+    "roles": [
+      "top"
+    ],
+    "classes": [
+      "Fighter",
+      "Tank"
+    ]
+  },
+  {
+    "id": "Nautilus",
+    "name": "Nautilus",
+    "roles": [
+      "support"
+    ],
+    "classes": [
+      "Tank",
+      "Support"
+    ]
+  },
+  {
+    "id": "Neeko",
+    "name": "Neeko",
+    "roles": [
+      "mid",
+      "support"
+    ],
+    "classes": [
+      "Mage",
+      "Support"
+    ]
+  },
+  {
+    "id": "Nidalee",
+    "name": "Nidalee",
+    "roles": [
+      "jungle"
+    ],
+    "classes": [
+      "Assassin",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Nilah",
+    "name": "Nilah",
+    "roles": [
+      "bot"
+    ],
+    "classes": [
+      "Fighter",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Nocturne",
+    "name": "Nocturne",
+    "roles": [
+      "jungle"
+    ],
+    "classes": [
+      "Fighter",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Nunu",
+    "name": "Nunu et Willump",
+    "roles": [
+      "jungle"
+    ],
+    "classes": [
+      "Tank",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Olaf",
+    "name": "Olaf",
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "classes": [
+      "Fighter",
+      "Tank"
+    ]
+  },
+  {
+    "id": "Orianna",
+    "name": "Orianna",
+    "roles": [
+      "mid"
+    ],
+    "classes": [
+      "Mage",
+      "Support"
+    ]
+  },
+  {
+    "id": "Ornn",
+    "name": "Ornn",
+    "roles": [
+      "top"
+    ],
+    "classes": [
+      "Tank"
+    ]
+  },
+  {
+    "id": "Pantheon",
+    "name": "Pantheon",
+    "roles": [
+      "top",
+      "jungle",
+      "mid",
+      "support"
+    ],
+    "classes": [
+      "Fighter",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Poppy",
+    "name": "Poppy",
+    "roles": [
+      "top",
+      "jungle",
+      "support"
+    ],
+    "classes": [
+      "Tank",
+      "Fighter"
+    ]
+  },
+  {
+    "id": "Pyke",
+    "name": "Pyke",
+    "roles": [
+      "support"
+    ],
+    "classes": [
+      "Support",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Qiyana",
+    "name": "Qiyana",
+    "roles": [
+      "jungle",
+      "mid"
+    ],
+    "classes": [
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Quinn",
+    "name": "Quinn",
+    "roles": [
+      "top"
+    ],
+    "classes": [
+      "Marksman",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Rakan",
+    "name": "Rakan",
+    "roles": [
+      "support"
+    ],
+    "classes": [
+      "Support"
+    ]
+  },
+  {
+    "id": "Rammus",
+    "name": "Rammus",
+    "roles": [
+      "jungle"
+    ],
+    "classes": [
+      "Tank"
+    ]
+  },
+  {
+    "id": "RekSai",
+    "name": "Rek'Sai",
+    "roles": [
+      "jungle"
+    ],
+    "classes": [
+      "Fighter",
+      "Tank"
+    ]
+  },
+  {
+    "id": "Rell",
+    "name": "Rell",
+    "roles": [
+      "jungle",
+      "support"
+    ],
+    "classes": [
+      "Tank",
+      "Support"
+    ]
+  },
+  {
+    "id": "Renata",
+    "name": "Renata Glasc",
+    "roles": [
+      "support"
+    ],
+    "classes": [
+      "Support",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Renekton",
+    "name": "Renekton",
+    "roles": [
+      "top"
+    ],
+    "classes": [
+      "Fighter",
+      "Tank"
+    ]
+  },
+  {
+    "id": "Rengar",
+    "name": "Rengar",
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "classes": [
+      "Assassin",
+      "Fighter"
+    ]
+  },
+  {
+    "id": "Riven",
+    "name": "Riven",
+    "roles": [
+      "top"
+    ],
+    "classes": [
+      "Fighter",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Rumble",
+    "name": "Rumble",
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "classes": [
+      "Fighter",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Ryze",
+    "name": "Ryze",
+    "roles": [
+      "top",
+      "mid"
+    ],
+    "classes": [
+      "Mage"
+    ]
+  },
+  {
+    "id": "Samira",
+    "name": "Samira",
+    "roles": [
+      "bot"
+    ],
+    "classes": [
+      "Marksman",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Sejuani",
+    "name": "Sejuani",
+    "roles": [
+      "jungle"
+    ],
+    "classes": [
+      "Tank"
+    ]
+  },
+  {
+    "id": "Senna",
+    "name": "Senna",
+    "roles": [
+      "bot",
+      "support"
+    ],
+    "classes": [
+      "Support",
+      "Marksman"
+    ]
+  },
+  {
+    "id": "Sett",
+    "name": "Sett",
+    "roles": [
+      "top",
+      "support"
+    ],
+    "classes": [
+      "Fighter",
+      "Tank"
+    ]
+  },
+  {
+    "id": "Shaco",
+    "name": "Shaco",
+    "roles": [
+      "jungle",
+      "support"
+    ],
+    "classes": [
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Shen",
+    "name": "Shen",
+    "roles": [
+      "top",
+      "jungle",
+      "support"
+    ],
+    "classes": [
+      "Tank"
+    ]
+  },
+  {
+    "id": "Shyvana",
+    "name": "Shyvana",
+    "roles": [
+      "jungle"
+    ],
+    "classes": [
+      "Fighter",
+      "Tank"
+    ]
+  },
+  {
+    "id": "Singed",
+    "name": "Singed",
+    "roles": [
+      "top"
+    ],
+    "classes": [
+      "Tank",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Sion",
+    "name": "Sion",
+    "roles": [
+      "top"
+    ],
+    "classes": [
+      "Tank",
+      "Fighter"
+    ]
+  },
+  {
+    "id": "Sivir",
+    "name": "Sivir",
+    "roles": [
+      "bot"
+    ],
+    "classes": [
+      "Marksman"
+    ]
+  },
+  {
+    "id": "Skarner",
+    "name": "Skarner",
+    "roles": [
+      "jungle"
+    ],
+    "classes": [
+      "Tank",
+      "Fighter"
+    ]
+  },
+  {
+    "id": "Smolder",
+    "name": "Smolder",
+    "roles": [
+      "mid",
+      "bot"
+    ],
+    "classes": [
+      "Marksman",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Sona",
+    "name": "Sona",
+    "roles": [
+      "support"
+    ],
+    "classes": [
+      "Support",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Soraka",
+    "name": "Soraka",
+    "roles": [
+      "support"
+    ],
+    "classes": [
+      "Support",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Swain",
+    "name": "Swain",
+    "roles": [
+      "mid",
+      "bot",
+      "support"
+    ],
+    "classes": [
+      "Mage",
+      "Support"
+    ]
+  },
+  {
+    "id": "Sylas",
+    "name": "Sylas",
+    "roles": [
+      "jungle",
+      "mid"
+    ],
+    "classes": [
+      "Mage",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Syndra",
+    "name": "Syndra",
+    "roles": [
+      "mid"
+    ],
+    "classes": [
+      "Mage"
+    ]
+  },
+  {
+    "id": "Seraphine",
+    "name": "Séraphine",
+    "roles": [
+      "mid",
+      "bot",
+      "support"
+    ],
+    "classes": [
+      "Support",
+      "Mage"
+    ]
+  },
+  {
+    "id": "TahmKench",
+    "name": "Tahm Kench",
+    "roles": [
+      "top",
+      "support"
+    ],
+    "classes": [
+      "Tank",
+      "Support"
+    ]
+  },
+  {
+    "id": "Taliyah",
+    "name": "Taliyah",
+    "roles": [
+      "jungle",
+      "mid"
+    ],
+    "classes": [
+      "Mage",
+      "Support"
+    ]
+  },
+  {
+    "id": "Talon",
+    "name": "Talon",
+    "roles": [
+      "jungle",
+      "mid"
+    ],
+    "classes": [
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Taric",
+    "name": "Taric",
+    "roles": [
+      "support"
+    ],
+    "classes": [
+      "Support",
+      "Tank"
+    ]
+  },
+  {
+    "id": "Teemo",
+    "name": "Teemo",
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "classes": [
+      "Marksman",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Thresh",
+    "name": "Thresh",
+    "roles": [
+      "support"
+    ],
+    "classes": [
+      "Support",
+      "Tank"
+    ]
+  },
+  {
+    "id": "Tristana",
+    "name": "Tristana",
+    "roles": [
+      "mid",
+      "bot"
+    ],
+    "classes": [
+      "Marksman",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Trundle",
+    "name": "Trundle",
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "classes": [
+      "Fighter",
+      "Tank"
+    ]
+  },
+  {
+    "id": "Tryndamere",
+    "name": "Tryndamere",
+    "roles": [
+      "top"
+    ],
+    "classes": [
+      "Fighter",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "TwistedFate",
+    "name": "Twisted Fate",
+    "roles": [
+      "mid"
+    ],
+    "classes": [
+      "Mage",
+      "Marksman"
+    ]
+  },
+  {
+    "id": "Twitch",
+    "name": "Twitch",
+    "roles": [
+      "bot",
+      "support"
+    ],
+    "classes": [
+      "Marksman",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Udyr",
+    "name": "Udyr",
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "classes": [
+      "Fighter",
+      "Tank"
+    ]
+  },
+  {
+    "id": "Urgot",
+    "name": "Urgot",
+    "roles": [
+      "top"
+    ],
+    "classes": [
+      "Fighter",
+      "Tank"
+    ]
+  },
+  {
+    "id": "Varus",
+    "name": "Varus",
+    "roles": [
+      "mid",
+      "bot"
+    ],
+    "classes": [
+      "Marksman",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Vayne",
+    "name": "Vayne",
+    "roles": [
+      "top",
+      "bot"
+    ],
+    "classes": [
+      "Marksman",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Veigar",
+    "name": "Veigar",
+    "roles": [
+      "mid",
+      "bot"
+    ],
+    "classes": [
+      "Mage"
+    ]
+  },
+  {
+    "id": "Velkoz",
+    "name": "Vel'Koz",
+    "roles": [
+      "mid",
+      "support"
+    ],
+    "classes": [
+      "Mage",
+      "Support"
+    ]
+  },
+  {
+    "id": "Vex",
+    "name": "Vex",
+    "roles": [
+      "mid",
+      "support"
+    ],
+    "classes": [
+      "Mage"
+    ]
+  },
+  {
+    "id": "Vi",
+    "name": "Vi",
+    "roles": [
+      "jungle"
+    ],
+    "classes": [
+      "Fighter",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Viego",
+    "name": "Viego",
+    "roles": [
+      "jungle"
+    ],
+    "classes": [
+      "Fighter",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Viktor",
+    "name": "Viktor",
+    "roles": [
+      "mid"
+    ],
+    "classes": [
+      "Mage"
+    ]
+  },
+  {
+    "id": "Vladimir",
+    "name": "Vladimir",
+    "roles": [
+      "top",
+      "mid"
+    ],
+    "classes": [
+      "Mage",
+      "Fighter"
+    ]
+  },
+  {
+    "id": "Volibear",
+    "name": "Volibear",
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "classes": [
+      "Fighter",
+      "Tank"
+    ]
+  },
+  {
+    "id": "Warwick",
+    "name": "Warwick",
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "classes": [
+      "Fighter",
+      "Tank"
+    ]
+  },
+  {
+    "id": "MonkeyKing",
+    "name": "Wukong",
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "classes": [
+      "Fighter",
+      "Tank"
+    ]
+  },
+  {
+    "id": "Xayah",
+    "name": "Xayah",
+    "roles": [
+      "bot"
+    ],
+    "classes": [
+      "Marksman"
+    ]
+  },
+  {
+    "id": "Xerath",
+    "name": "Xerath",
+    "roles": [
+      "mid",
+      "support"
+    ],
+    "classes": [
+      "Mage",
+      "Support"
+    ]
+  },
+  {
+    "id": "XinZhao",
+    "name": "Xin Zhao",
+    "roles": [
+      "jungle"
+    ],
+    "classes": [
+      "Fighter",
+      "Tank"
+    ]
+  },
+  {
+    "id": "Yasuo",
+    "name": "Yasuo",
+    "roles": [
+      "top",
+      "mid",
+      "bot"
+    ],
+    "classes": [
+      "Fighter",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Yone",
+    "name": "Yone",
+    "roles": [
+      "top",
+      "mid"
+    ],
+    "classes": [
+      "Fighter",
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Yorick",
+    "name": "Yorick",
+    "roles": [
+      "top"
+    ],
+    "classes": [
+      "Fighter",
+      "Tank"
+    ]
+  },
+  {
+    "id": "Yunara",
+    "name": "Yunara",
+    "roles": [
+      "bot"
+    ],
+    "classes": [
+      "Marksman"
+    ]
+  },
+  {
+    "id": "Yuumi",
+    "name": "Yuumi",
+    "roles": [
+      "support"
+    ],
+    "classes": [
+      "Support",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Zaahen",
+    "name": "Zaahen",
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "classes": [
+      "Fighter"
+    ]
+  },
+  {
+    "id": "Zac",
+    "name": "Zac",
+    "roles": [
+      "jungle",
+      "support"
+    ],
+    "classes": [
+      "Tank",
+      "Fighter"
+    ]
+  },
+  {
+    "id": "Zed",
+    "name": "Zed",
+    "roles": [
+      "jungle",
+      "mid"
+    ],
+    "classes": [
+      "Assassin"
+    ]
+  },
+  {
+    "id": "Zeri",
+    "name": "Zeri",
+    "roles": [
+      "bot"
+    ],
+    "classes": [
+      "Marksman"
+    ]
+  },
+  {
+    "id": "Ziggs",
+    "name": "Ziggs",
+    "roles": [
+      "mid",
+      "bot"
+    ],
+    "classes": [
+      "Mage"
+    ]
+  },
+  {
+    "id": "Zilean",
+    "name": "Zilean",
+    "roles": [
+      "support"
+    ],
+    "classes": [
+      "Support",
+      "Mage"
+    ]
+  },
+  {
+    "id": "Zoe",
+    "name": "Zoé",
+    "roles": [
+      "mid"
+    ],
+    "classes": [
+      "Mage"
+    ]
+  },
+  {
+    "id": "Zyra",
+    "name": "Zyra",
+    "roles": [
+      "jungle",
+      "mid",
+      "support"
+    ],
+    "classes": [
+      "Mage",
+      "Support"
+    ]
+  }
+]

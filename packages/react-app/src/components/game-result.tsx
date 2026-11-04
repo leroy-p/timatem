@@ -1,6 +1,9 @@
+import { useState } from 'react'
 import styled from 'styled-components'
 import type { Assignment } from '../hooks/use-game'
+import ChampionDialog from './champion-dialog'
 import { Button, Panel } from './game-styles'
+import ShareResult from './share-result'
 
 interface Props {
   theme: string
@@ -10,28 +13,60 @@ interface Props {
 }
 
 export default function GameResult({ theme, assignments, onDraw, onReset }: Props) {
+  const [activeAssignment, setActiveAssignment] = useState<Assignment | null>(null)
+
   return (
     <Panel>
       <div aria-live="polite">
-        <p>Thème de la partie</p>
-        <ThemeTitle>{theme}</ThemeTitle>
+        <ResultHeader>
+          <ThemeSummary>
+            <p>Thème de la partie</p>
+            <ThemeTitle>{theme}</ThemeTitle>
+          </ThemeSummary>
+          <ShareResult key={JSON.stringify({ theme, assignments })} result={{ theme, assignments }} />
+        </ResultHeader>
         <Players>
           {assignments.map(({ username, role }) => (
             <PlayerRow key={role}>
               <strong>{username}</strong>
-              <RoleLabel>{role}</RoleLabel>
+              <RoleDetails>
+                <RoleLabel>{role}</RoleLabel>
+                <InfoButton
+                  type="button"
+                  aria-label={`Champions pour ${username}, ${role}`}
+                  aria-haspopup="dialog"
+                  onClick={() => setActiveAssignment({ username, role })}
+                >
+                  i
+                </InfoButton>
+              </RoleDetails>
             </PlayerRow>
           ))}
         </Players>
       </div>
       <Actions>
-        <DrawButton type="button" onClick={onDraw}>
+        <DrawButton
+          type="button"
+          onClick={() => {
+            setActiveAssignment(null)
+            onDraw()
+          }}
+        >
           Nouveau tirage
         </DrawButton>
-        <Button type="button" onClick={onReset}>
+        <Button
+          type="button"
+          onClick={() => {
+            setActiveAssignment(null)
+            onReset()
+          }}
+        >
           Changer les joueurs
         </Button>
       </Actions>
+      {activeAssignment && (
+        <ChampionDialog theme={theme} assignment={activeAssignment} onClose={() => setActiveAssignment(null)} />
+      )}
     </Panel>
   )
 }
@@ -42,12 +77,54 @@ const DrawButton = styled(Button)`
   color: #102b24;
 `
 
+const ResultHeader = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+`
+
+const ThemeSummary = styled.div`
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+`
+
 const ThemeTitle = styled.h2`
   color: #b9b3ff;
 `
 
 const RoleLabel = styled.span`
   color: #82e0c4;
+`
+
+const RoleDetails = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+`
+
+const InfoButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 1px solid #b9b3ff;
+  border-radius: 50%;
+  background: transparent;
+  color: #b9b3ff;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 3px;
+  }
 `
 
 const Players = styled.ul`
@@ -60,6 +137,7 @@ const Players = styled.ul`
 `
 const PlayerRow = styled.li`
   display: flex;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 12px;

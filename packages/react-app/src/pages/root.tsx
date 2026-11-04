@@ -7,7 +7,10 @@ import { useGame } from '../hooks/use-game'
 import Layout from '../layout'
 
 export default function Root() {
-  const game = useGame(players, themes)
+  const game = useGame(
+    players,
+    themes.map((theme) => theme.label),
+  )
 
   return (
     <Layout>

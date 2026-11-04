@@ -1,15 +1,8 @@
 import { useState } from 'react'
+import { type Assignment, type Player, roles } from '../types/game'
+import { clearGameUrl, createGameUrl, type GameResultData, readGameUrl } from '../utils/game-url'
 
-export const roles = ['top', 'jungle', 'mid', 'bot', 'support'] as const
-export type Role = (typeof roles)[number]
-export interface Player {
-  username: string
-  roles: string[]
-}
-export interface Assignment {
-  username: string
-  role: Role
-}
+export { type Assignment, type Player, type Role, roles } from '../types/game'
 
 export function getAssignments(players: Player[]): Assignment[][] {
   if (players.length !== roles.length || new Set(players.map((player) => player.username)).size !== roles.length)
@@ -31,9 +24,12 @@ export function getAssignments(players: Player[]): Assignment[][] {
   return results
 }
 
-export function useGame(players: Player[], themes: string[]) {
-  const [selected, setSelected] = useState<string[]>(new Array(5).fill(''))
-  const [result, setResult] = useState<{ theme: string; assignments: Assignment[] } | null>(null)
+export function useGame(players: Player[], themes: string[], availableThemes = themes) {
+  const [initialResult] = useState(() => readGameUrl(new URL(window.location.href), players, availableThemes))
+  const [selected, setSelected] = useState<string[]>(
+    () => initialResult?.assignments.map((assignment) => assignment.username) ?? new Array(5).fill(''),
+  )
+  const [result, setResult] = useState<GameResultData | null>(initialResult)
   const [error, setError] = useState('')
   const canStart = selected.every(Boolean) && new Set(selected).size === 5
 
@@ -50,16 +46,21 @@ export function useGame(players: Player[], themes: string[]) {
       return
     }
     setError('')
-    setResult({
+    const nextResult = {
       theme: themes[Math.floor(Math.random() * themes.length)],
       assignments: possibilities[Math.floor(Math.random() * possibilities.length)],
-    })
+    }
+    setResult(nextResult)
+    if (new URL(window.location.href).searchParams.has('theme')) {
+      window.history.replaceState(window.history.state, '', createGameUrl(window.location.href, nextResult))
+    }
   }
 
   function reset() {
     setSelected(new Array(5).fill(''))
     setResult(null)
     setError('')
+    clearGameUrl()
   }
 
   return { selected, result, error, canStart, selectPlayer, draw, reset }
