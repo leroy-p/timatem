@@ -1,11 +1,13 @@
 import { createGlobalStyle } from 'styled-components'
-import shortStack from '../assets/fonts/ShortStack-Regular.ttf'
+import roboto from '../assets/fonts/Roboto-Variable.ttf'
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
-    font-family: "ShortStack";
-    src: url("${shortStack}");
+    font-family: "Roboto";
+    src: url("${roboto}") format("truetype");
     font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
   }
 
   * {
@@ -15,8 +17,12 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'ShortStack', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
+  }
+
+  button, input, select, textarea {
+    font-family: inherit;
   }
 
   h1, h2, h3, h4, h5, h6, p {

@@ -90,4 +90,32 @@ describe('game sharing', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Partager le tirage' }))
     expect(await screen.findByRole('textbox', { name: 'Lien de partage' })).toBeInTheDocument()
   })
+  it('shows a temporary tooltip after copying and restarts its delay on another click', async () => {
+    vi.useFakeTimers()
+    try {
+      Object.defineProperty(navigator, 'clipboard', {
+        configurable: true,
+        value: { writeText: vi.fn().mockResolvedValue(undefined) },
+      })
+      render(<ShareResult result={result} />)
+      const button = screen.getByRole('button', { name: 'Partager le tirage' })
+      await act(async () => {
+        fireEvent.click(button)
+        await Promise.resolve()
+      })
+      expect(screen.getByRole('tooltip')).toHaveTextContent('Copié dans le presse-papier')
+      act(() => vi.advanceTimersByTime(1500))
+      await act(async () => {
+        fireEvent.click(button)
+        await Promise.resolve()
+      })
+      act(() => vi.advanceTimersByTime(1500))
+      expect(screen.getByRole('tooltip')).toBeInTheDocument()
+      act(() => vi.advanceTimersByTime(500))
+      expect(screen.queryByRole('tooltip')).not.toBeInTheDocument()
+    } finally {
+      cleanup()
+      vi.useRealTimers()
+    }
+  })
 })

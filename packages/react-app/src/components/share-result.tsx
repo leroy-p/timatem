@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useId, useRef, useState } from 'react'
 import styled from 'styled-components'
 import { createGameUrl, type GameResultData } from '../utils/game-url'
 import { Button } from './game-styles'
@@ -7,14 +7,23 @@ export default function ShareResult({ result }: { result: GameResultData }) {
   const [message, setMessage] = useState('')
   const [link, setLink] = useState('')
   const [pending, setPending] = useState(false)
+  const [copied, setCopied] = useState(false)
+  const tooltipId = useId()
+  const tooltipTimeout = useRef<number | undefined>(undefined)
+
+  useEffect(() => () => window.clearTimeout(tooltipTimeout.current), [])
 
   async function share() {
     const url = createGameUrl(window.location.href, result)
+    window.clearTimeout(tooltipTimeout.current)
+    setCopied(false)
     setPending(true)
     setLink('')
     setMessage('')
     try {
       await navigator.clipboard.writeText(url)
+      setCopied(true)
+      tooltipTimeout.current = window.setTimeout(() => setCopied(false), 2000)
     } catch {
       setMessage('Copie automatique impossible. Tu peux copier le lien ci-dessous.')
       setLink(url)
@@ -29,6 +38,7 @@ export default function ShareResult({ result }: { result: GameResultData }) {
         type="button"
         aria-label="Partager le tirage"
         title="Partager le tirage"
+        aria-describedby={copied ? tooltipId : undefined}
         onClick={share}
         disabled={pending}
       >
@@ -50,6 +60,11 @@ export default function ShareResult({ result }: { result: GameResultData }) {
           <path d="m8.6 10.5 6.8-4M8.6 13.5l6.8 4" />
         </svg>
       </ShareButton>
+      {copied && (
+        <Tooltip id={tooltipId} role="tooltip">
+          Copié dans le presse-papier
+        </Tooltip>
+      )}
       <Feedback role="status">{message}</Feedback>
       {link && (
         <LinkInput
@@ -64,6 +79,7 @@ export default function ShareResult({ result }: { result: GameResultData }) {
 }
 
 const Container = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -91,4 +107,20 @@ const LinkInput = styled.input`
   color: #f4f3ff;
   font: inherit;
   &:focus-visible { outline: 2px solid #b9b3ff; }
+`
+
+const Tooltip = styled.span`
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 10;
+  width: max-content;
+  max-width: min(260px, calc(100vw - 64px));
+  padding: 8px 12px;
+  border: 1px solid #b9b3ff;
+  border-radius: 8px;
+  background: #25252f;
+  color: #f4f3ff;
+  font-size: 13px;
+  pointer-events: none;
 `
