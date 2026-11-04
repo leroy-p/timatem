@@ -6,6 +6,7 @@ import ChampionDialog from './champion-dialog'
 import { Button, Panel } from './game-styles'
 import PlayerIdentityDialog from './player-identity-dialog'
 import ShareResult from './share-result'
+import ThemeDifficulty from './theme-difficulty'
 
 interface Props {
   theme: string
@@ -25,6 +26,7 @@ export default function GameResult({ theme, assignments, onDraw, onReset }: Prop
           <ThemeSummary>
             <p>Thème de la partie</p>
             <ThemeTitle>{theme}</ThemeTitle>
+            <ThemeDifficulty theme={theme} />
           </ThemeSummary>
           <ShareResult key={JSON.stringify({ theme, assignments })} result={{ theme, assignments }} />
         </ResultHeader>

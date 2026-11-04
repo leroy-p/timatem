@@ -20,7 +20,8 @@
       "https://www.leagueoflegends.com/en-us/champions/riven/",
       "https://www.leagueoflegends.com/en-us/champions/yasuo/",
       "https://www.leagueoflegends.com/en-us/champions/yone/"
-    ]
+    ],
+    "difficulty": 5
   },
   {
     "label": "Animaux",
@@ -71,7 +72,8 @@
       "https://www.leagueoflegends.com/en-us/champions/kogmaw/",
       "https://www.leagueoflegends.com/en-us/champions/blitzcrank/",
       "https://www.leagueoflegends.com/en-us/champions/"
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "label": "Arme à deux mains",
@@ -124,7 +126,8 @@
       "https://www.leagueoflegends.com/en-us/champions/xinzhao/",
       "https://www.leagueoflegends.com/en-us/champions/jinx/",
       "https://www.leagueoflegends.com/en-us/champions/"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "label": "Assassin",
@@ -180,7 +183,8 @@
     ],
     "sources": [
       "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/fr_FR/champion.json"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "label": "Attack Speed",
@@ -233,7 +237,8 @@
       "https://op.gg/lol/champions/jinx/build",
       "https://op.gg/lol/champions/azir/build",
       "https://op.gg/lol/champions/jax/build"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "label": "Bleu",
@@ -270,7 +275,8 @@
       "https://www.leagueoflegends.com/en-us/champions/ryze/",
       "https://www.leagueoflegends.com/en-us/champions/trundle/",
       "https://www.leagueoflegends.com/en-us/champions/xerath/"
-    ]
+    ],
+    "difficulty": 5
   },
   {
     "label": "Boobs",
@@ -294,7 +300,8 @@
     ],
     "sources": [
       "https://www.leagueoflegends.com/en-us/champions/"
-    ]
+    ],
+    "difficulty": 5
   },
   {
     "label": "Boule",
@@ -353,7 +360,8 @@
       "https://www.leagueoflegends.com/en-us/champions/ziggs/",
       "https://www.leagueoflegends.com/en-us/champions/zilean/",
       "https://www.leagueoflegends.com/en-us/champions/zoe/"
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "label": "Cape",
@@ -428,7 +436,8 @@
       "https://www.leagueoflegends.com/en-us/champions/xayah/",
       "https://www.leagueoflegends.com/en-us/champions/xinzhao/",
       "https://www.leagueoflegends.com/en-us/champions/yorick/"
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "label": "Chapeau",
@@ -457,7 +466,8 @@
       "https://www.leagueoflegends.com/en-us/champions/twistedfate/",
       "https://www.leagueoflegends.com/en-us/champions/veigar/",
       "https://www.leagueoflegends.com/en-us/champions/tahmkench/"
-    ]
+    ],
+    "difficulty": 5
   },
   {
     "label": "Chauve",
@@ -486,7 +496,8 @@
       "https://www.leagueoflegends.com/en-us/champions/sion/",
       "https://www.leagueoflegends.com/en-us/champions/urgot/",
       "https://www.leagueoflegends.com/en-us/champions/zilean/"
-    ]
+    ],
+    "difficulty": 5
   },
   {
     "label": "Cheveux colorés",
@@ -533,14 +544,16 @@
       "https://www.leagueoflegends.com/en-us/champions/xayah/",
       "https://www.leagueoflegends.com/en-us/champions/zeri/",
       "https://www.leagueoflegends.com/en-us/champions/zoe/"
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "label": "Compo d'en face de la précédente game",
     "status": "contextual",
     "description": "Reprends les champions de la composition adverse de ta partie précédente.",
     "championIds": [],
-    "sources": []
+    "sources": [],
+    "difficulty": 3
   },
   {
     "label": "Dark Sasuke",
@@ -578,7 +591,8 @@
     ],
     "sources": [
       "https://www.leagueoflegends.com/fr-fr/champions/"
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "label": "Dash",
@@ -793,7 +807,8 @@
       "https://www.leagueoflegends.com/en-us/champions/twistedfate/",
       "https://www.leagueoflegends.com/en-us/champions/zed/",
       "https://www.leagueoflegends.com/en-us/champions/zoe/"
-    ]
+    ],
+    "difficulty": 1
   },
   {
     "label": "Demacia",
@@ -832,7 +847,8 @@
       "https://www.leagueoflegends.com/en-us/champions/sylas/",
       "https://www.leagueoflegends.com/en-us/champions/vayne/",
       "https://www.leagueoflegends.com/en-us/champions/xinzhao/"
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "label": "Deux armes",
@@ -864,7 +880,8 @@
     ],
     "sources": [
       "https://www.leagueoflegends.com/fr-fr/champions/"
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "label": "Divinité",
@@ -927,7 +944,8 @@
       "https://www.leagueoflegends.com/en-us/champions/xerath/",
       "https://www.leagueoflegends.com/en-us/champions/zaahen/",
       "https://www.leagueoflegends.com/en-us/champions/zoe/"
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "label": "Dot",
@@ -1020,7 +1038,8 @@
       "https://www.leagueoflegends.com/en-us/champions/velkoz/",
       "https://www.leagueoflegends.com/en-us/champions/viktor/",
       "https://www.leagueoflegends.com/en-us/champions/vladimir/"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "label": "Eau",
@@ -1045,7 +1064,8 @@
       "https://www.leagueoflegends.com/en-us/champions/pyke/",
       "https://www.leagueoflegends.com/en-us/champions/qiyana/",
       "https://www.leagueoflegends.com/en-us/champions/tahmkench/"
-    ]
+    ],
+    "difficulty": 5
   },
   {
     "label": "Femmes",
@@ -1123,7 +1143,8 @@
     ],
     "sources": [
       "https://www.leagueoflegends.com/fr-fr/champions/"
-    ]
+    ],
+    "difficulty": 1
   },
   {
     "label": "Feu",
@@ -1158,7 +1179,8 @@
       "https://www.leagueoflegends.com/en-us/champions/shyvana/",
       "https://www.leagueoflegends.com/en-us/champions/smolder/",
       "https://www.leagueoflegends.com/en-us/champions/udyr/"
-    ]
+    ],
+    "difficulty": 5
   },
   {
     "label": "Foudre",
@@ -1181,7 +1203,8 @@
       "https://www.leagueoflegends.com/en-us/champions/udyr/",
       "https://www.leagueoflegends.com/en-us/champions/volibear/",
       "https://www.leagueoflegends.com/en-us/champions/zeri/"
-    ]
+    ],
+    "difficulty": 5
   },
   {
     "label": "Glace",
@@ -1208,7 +1231,8 @@
       "https://www.leagueoflegends.com/en-us/champions/sejuani/",
       "https://www.leagueoflegends.com/en-us/champions/trundle/",
       "https://www.leagueoflegends.com/en-us/champions/udyr/"
-    ]
+    ],
+    "difficulty": 5
   },
   {
     "label": "Grab",
@@ -1255,7 +1279,8 @@
       "https://www.leagueoflegends.com/en-us/champions/urgot/",
       "https://www.leagueoflegends.com/en-us/champions/zaahen/",
       "https://www.leagueoflegends.com/en-us/champions/zac/"
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "label": "Gros",
@@ -1298,7 +1323,8 @@
     ],
     "sources": [
       "https://www.leagueoflegends.com/fr-fr/champions/"
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "label": "Guerrier",
@@ -1356,7 +1382,8 @@
     ],
     "sources": [
       "https://www.leagueoflegends.com/fr-fr/champions/"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "label": "Heal",
@@ -1525,7 +1552,8 @@
       "https://www.leagueoflegends.com/en-us/champions/yuumi/",
       "https://www.leagueoflegends.com/en-us/champions/zaahen/",
       "https://www.leagueoflegends.com/en-us/champions/zac/"
-    ]
+    ],
+    "difficulty": 1
   },
   {
     "label": "Hommes",
@@ -1636,7 +1664,8 @@
     ],
     "sources": [
       "https://www.leagueoflegends.com/fr-fr/champions/"
-    ]
+    ],
+    "difficulty": 1
   },
   {
     "label": "Îles Obscures",
@@ -1670,7 +1699,8 @@
       "https://www.leagueoflegends.com/en-us/champions/vex/",
       "https://www.leagueoflegends.com/en-us/champions/viego/",
       "https://www.leagueoflegends.com/en-us/champions/yorick/"
-    ]
+    ],
+    "difficulty": 5
   },
   {
     "label": "Invisible",
@@ -1717,7 +1747,8 @@
       "https://www.leagueoflegends.com/en-us/champions/twitch/",
       "https://www.leagueoflegends.com/en-us/champions/vayne/",
       "https://www.leagueoflegends.com/en-us/champions/viego/"
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "label": "Invocations",
@@ -1782,7 +1813,8 @@
       "https://www.leagueoflegends.com/en-us/champions/yorick/",
       "https://www.leagueoflegends.com/en-us/champions/zed/",
       "https://www.leagueoflegends.com/en-us/champions/zyra/"
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "label": "Kawaï",
@@ -1816,14 +1848,16 @@
     ],
     "sources": [
       "https://www.leagueoflegends.com/fr-fr/champions/"
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "label": "Le first pick choisit pour tout le monde",
     "status": "contextual",
     "description": "Le premier joueur à choisir décide des champions pour toute l’équipe.",
     "championIds": [],
-    "sources": []
+    "sources": [],
+    "difficulty": 3
   },
   {
     "label": "Lent",
@@ -1868,7 +1902,8 @@
       "https://www.leagueoflegends.com/en-us/champions/velkoz/",
       "https://www.leagueoflegends.com/en-us/champions/xerath/",
       "https://www.leagueoflegends.com/en-us/champions/zyra/"
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "label": "Métal",
@@ -1975,7 +2010,8 @@
     ],
     "sources": [
       "https://www.leagueoflegends.com/fr-fr/champions/"
-    ]
+    ],
+    "difficulty": 1
   },
   {
     "label": "Muscles",
@@ -2027,7 +2063,8 @@
     ],
     "sources": [
       "https://www.leagueoflegends.com/fr-fr/champions/"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "label": "Nature",
@@ -2060,7 +2097,8 @@
       "https://www.leagueoflegends.com/en-us/champions/udyr/",
       "https://www.leagueoflegends.com/en-us/champions/xayah/",
       "https://www.leagueoflegends.com/en-us/champions/zyra/"
-    ]
+    ],
+    "difficulty": 5
   },
   {
     "label": "Néant",
@@ -2079,7 +2117,8 @@
     ],
     "sources": [
       "https://universe.leagueoflegends.com/en_US/region/void/"
-    ]
+    ],
+    "difficulty": 5
   },
   {
     "label": "Non-humain",
@@ -2181,7 +2220,8 @@
     ],
     "sources": [
       "https://www.leagueoflegends.com/fr-fr/champions/"
-    ]
+    ],
+    "difficulty": 1
   },
   {
     "label": "Noxus",
@@ -2224,7 +2264,8 @@
       "https://www.leagueoflegends.com/en-us/champions/swain/",
       "https://www.leagueoflegends.com/en-us/champions/talon/",
       "https://www.leagueoflegends.com/en-us/champions/vladimir/"
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "label": "Pas de jambe",
@@ -2242,7 +2283,8 @@
     ],
     "sources": [
       "https://www.leagueoflegends.com/fr-fr/champions/"
-    ]
+    ],
+    "difficulty": 5
   },
   {
     "label": "Pas de mana",
@@ -2280,7 +2322,8 @@
     ],
     "sources": [
       "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/fr_FR/champion.json"
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "label": "Petit",
@@ -2312,7 +2355,8 @@
     ],
     "sources": [
       "https://www.leagueoflegends.com/fr-fr/champions/"
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "label": "Piltover",
@@ -2335,7 +2379,8 @@
       "https://www.leagueoflegends.com/en-us/champions/jayce/",
       "https://www.leagueoflegends.com/en-us/champions/orianna/",
       "https://www.leagueoflegends.com/en-us/champions/vi/"
-    ]
+    ],
+    "difficulty": 5
   },
   {
     "label": "Pirate",
@@ -2355,7 +2400,8 @@
     ],
     "sources": [
       "https://universe.leagueoflegends.com/en_US/region/bilgewater/"
-    ]
+    ],
+    "difficulty": 5
   },
   {
     "label": "Point & click",
@@ -2443,14 +2489,16 @@
     ],
     "sources": [
       "https://www.leagueoflegends.com/fr-fr/champions/"
-    ]
+    ],
+    "difficulty": 1
   },
   {
     "label": "Point commun avec le précédent",
     "status": "contextual",
     "description": "Choisis un champion ayant un point commun avec celui choisi juste avant toi. Si tu es le premier à pick, choisis le champion de ton choix.",
     "championIds": [],
-    "sources": []
+    "sources": [],
+    "difficulty": 3
   },
   {
     "label": "Poke",
@@ -2517,7 +2565,8 @@
     ],
     "sources": [
       "https://www.leagueoflegends.com/fr-fr/champions/"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "label": "Queue",
@@ -2558,7 +2607,8 @@
     ],
     "sources": [
       "https://www.leagueoflegends.com/fr-fr/champions/"
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "label": "Rapide",
@@ -2645,7 +2695,8 @@
     ],
     "sources": [
       "https://www.leagueoflegends.com/fr-fr/champions/"
-    ]
+    ],
+    "difficulty": 1
   },
   {
     "label": "Rose",
@@ -2656,7 +2707,8 @@
     ],
     "sources": [
       "https://www.leagueoflegends.com/en-us/champions/seraphine/"
-    ]
+    ],
+    "difficulty": 5
   },
   {
     "label": "Rouge",
@@ -2687,7 +2739,8 @@
       "https://www.leagueoflegends.com/en-us/champions/shaco/",
       "https://www.leagueoflegends.com/en-us/champions/swain/",
       "https://www.leagueoflegends.com/en-us/champions/vladimir/"
-    ]
+    ],
+    "difficulty": 5
   },
   {
     "label": "Shield",
@@ -2810,7 +2863,8 @@
       "https://www.leagueoflegends.com/en-us/champions/yasuo/",
       "https://www.leagueoflegends.com/en-us/champions/yone/",
       "https://www.leagueoflegends.com/en-us/champions/yuumi/"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "label": "Skillshot",
@@ -2971,7 +3025,8 @@
     ],
     "sources": [
       "https://www.leagueoflegends.com/fr-fr/champions/"
-    ]
+    ],
+    "difficulty": 1
   },
   {
     "label": "Spooky",
@@ -3019,7 +3074,8 @@
     ],
     "sources": [
       "https://www.leagueoflegends.com/fr-fr/champions/"
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "label": "Stack",
@@ -3054,7 +3110,8 @@
       "https://www.leagueoflegends.com/en-us/champions/swain/",
       "https://www.leagueoflegends.com/en-us/champions/thresh/",
       "https://www.leagueoflegends.com/en-us/champions/veigar/"
-    ]
+    ],
+    "difficulty": 5
   },
   {
     "label": "Stun",
@@ -3211,7 +3268,8 @@
       "https://www.leagueoflegends.com/en-us/champions/volibear/",
       "https://www.leagueoflegends.com/en-us/champions/xerath/",
       "https://www.leagueoflegends.com/en-us/champions/zilean/"
-    ]
+    ],
+    "difficulty": 1
   },
   {
     "label": "Support",
@@ -3264,7 +3322,8 @@
     ],
     "sources": [
       "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/fr_FR/champion.json"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "label": "Tank",
@@ -3320,7 +3379,8 @@
     ],
     "sources": [
       "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/fr_FR/champion.json"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "label": "Terre",
@@ -3353,7 +3413,8 @@
       "https://www.leagueoflegends.com/en-us/champions/skarner/",
       "https://www.leagueoflegends.com/en-us/champions/taliyah/",
       "https://www.leagueoflegends.com/en-us/champions/taric/"
-    ]
+    ],
+    "difficulty": 5
   },
   {
     "label": "Ulti global",
@@ -3396,7 +3457,8 @@
     ],
     "sources": [
       "https://www.leagueoflegends.com/fr-fr/champions/"
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "label": "Vert",
@@ -3431,7 +3493,8 @@
       "https://www.leagueoflegends.com/en-us/champions/twitch/",
       "https://www.leagueoflegends.com/en-us/champions/warwick/",
       "https://www.leagueoflegends.com/en-us/champions/zac/"
-    ]
+    ],
+    "difficulty": 5
   },
   {
     "label": "Violet",
@@ -3484,7 +3547,8 @@
       "https://www.leagueoflegends.com/en-us/champions/varus/",
       "https://www.leagueoflegends.com/en-us/champions/velkoz/",
       "https://www.leagueoflegends.com/en-us/champions/xayah/"
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "label": "Yordle",
@@ -3521,7 +3585,8 @@
       "https://www.leagueoflegends.com/en-us/champions/veigar/",
       "https://www.leagueoflegends.com/en-us/champions/vex/",
       "https://www.leagueoflegends.com/en-us/champions/ziggs/"
-    ]
+    ],
+    "difficulty": 5
   },
   {
     "label": "Zaun",
@@ -3558,6 +3623,7 @@
       "https://www.leagueoflegends.com/en-us/champions/zac/",
       "https://www.leagueoflegends.com/en-us/champions/zeri/",
       "https://www.leagueoflegends.com/en-us/champions/ziggs/"
-    ]
+    ],
+    "difficulty": 5
   }
 ]

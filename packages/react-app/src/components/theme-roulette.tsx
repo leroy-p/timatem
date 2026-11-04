@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import styled, { keyframes } from 'styled-components'
 import { Panel } from './game-styles'
+import ThemeDifficulty from './theme-difficulty'
 
 const ROW_HEIGHT = 96
 export const MIN_SPIN_DURATION = 6000
@@ -58,7 +59,7 @@ export default function ThemeRoulette({ themes, theme, onComplete }: Props) {
         <Pointer $side="left">▸</Pointer>
         <Pointer $side="right">◂</Pointer>
       </Window>
-      <Hint>{settled ? 'Les rôles arrivent…' : 'Le destin de ton équipe se joue…'}</Hint>
+      <Hint>{settled ? <ThemeDifficulty theme={theme} /> : 'Le destin de ton équipe se joue…'}</Hint>
     </RoulettePanel>
   )
 }
