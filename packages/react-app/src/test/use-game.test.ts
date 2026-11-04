@@ -60,3 +60,34 @@ describe('game draw', () => {
     expect(result.current.canStart).toBe(false)
   })
 })
+
+it('changes every player role on consecutive rerolls when possible, including custom roles', () => {
+  const flexible = roles.map((_, index) => ({ username: `Flexible ${index}`, roles: [...roles] }))
+  const { result } = renderHook(() => useGame(flexible, themes))
+  act(() => flexible.forEach((player, index) => result.current.selectPlayer(index, player.username)))
+  act(() => result.current.setPlayerRoles('Flexible 0', ['top', 'mid']))
+  act(() => result.current.draw())
+  for (let index = 0; index < 10; index++) {
+    const previous = result.current.result!.assignments
+    act(() => result.current.finishDraw())
+    act(() => result.current.draw())
+    const next = result.current.result!.assignments
+    for (const entry of next) {
+      expect(entry.role).not.toBe(previous.find((player) => player.username === entry.username)?.role)
+    }
+    expect(['top', 'mid']).toContain(next.find((entry) => entry.username === 'Flexible 0')?.role)
+  }
+})
+
+it('still rerolls when no assignment can change every player role', () => {
+  const fixed = roles.map((role, index) => ({ username: `Fixed ${index}`, roles: [role] }))
+  const { result } = renderHook(() => useGame(fixed, themes))
+  act(() => fixed.forEach((player, index) => result.current.selectPlayer(index, player.username)))
+  act(() => result.current.draw())
+  const previous = result.current.result
+  act(() => result.current.finishDraw())
+  act(() => result.current.draw())
+  expect(result.current.result).not.toBe(previous)
+  expect(result.current.result?.assignments).toEqual(previous?.assignments)
+  expect(result.current.error).toBe('')
+})

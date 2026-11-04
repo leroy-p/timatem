@@ -81,9 +81,16 @@ export function useGame(players: Player[], themes: string[], availableThemes = t
       return
     }
     setError('')
+    const previousRoles = new Map(result?.assignments.map(({ username, role }) => [username, role]))
+    const changedAssignments = result
+      ? possibilities.filter((assignments) =>
+          assignments.every(({ username, role }) => previousRoles.get(username) !== role),
+        )
+      : []
+    const candidates = changedAssignments.length ? changedAssignments : possibilities
     const nextResult = {
       theme: themes[Math.floor(Math.random() * themes.length)],
-      assignments: possibilities[Math.floor(Math.random() * possibilities.length)],
+      assignments: candidates[Math.floor(Math.random() * candidates.length)],
     }
     setResult(nextResult)
     setIsDrawing(true)
