@@ -275,7 +275,7 @@
       "https://www.leagueoflegends.com/en-us/champions/trundle/",
       "https://www.leagueoflegends.com/en-us/champions/xerath/"
     ],
-    "difficulty": 5
+    "difficulty": 3
   },
   {
     "label": "Boobs",
@@ -547,12 +547,100 @@
     "difficulty": 4
   },
   {
+    "label": "Classe tank, items dégats",
+    "status": "curated",
+    "description": "Champions de type tank. Obligation d'acheter uniquement des items contenant des stats de dégats.",
+    "championIds": [
+      "Alistar",
+      "Amumu",
+      "Blitzcrank",
+      "Braum",
+      "Chogath",
+      "Darius",
+      "DrMundo",
+      "Galio",
+      "Garen",
+      "Gnar",
+      "Hecarim",
+      "Illaoi",
+      "JarvanIV",
+      "KSante",
+      "Leona",
+      "Malphite",
+      "Maokai",
+      "Nasus",
+      "Nautilus",
+      "Nunu",
+      "Olaf",
+      "Ornn",
+      "Poppy",
+      "Rammus",
+      "RekSai",
+      "Rell",
+      "Renekton",
+      "Sejuani",
+      "Sett",
+      "Shen",
+      "Shyvana",
+      "Singed",
+      "Sion",
+      "Skarner",
+      "TahmKench",
+      "Taric",
+      "Thresh",
+      "Trundle",
+      "Udyr",
+      "Urgot",
+      "Volibear",
+      "Warwick",
+      "MonkeyKing",
+      "XinZhao",
+      "Yorick",
+      "Zac"
+    ],
+    "sources": [
+      "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/fr_FR/champion.json"
+    ],
+    "difficulty": 5,
+    "ignoreRoleFilter": true
+  },
+  {
     "label": "Compo d'en face de la précédente game",
     "status": "contextual",
     "description": "Reprends les champions de la composition adverse de ta partie précédente.",
     "championIds": [],
     "sources": [],
     "difficulty": 3
+  },
+  {
+    "label": "Cuisine",
+    "status": "curated",
+    "description": "Champions qui mangent, croquent ou ont un lien avec la cuisine, la nourriture ou les boissons, sans compter les skins.",
+    "championIds": [
+      "Belveth",
+      "Briar",
+      "Chogath",
+      "Elise",
+      "Gangplank",
+      "Gragas",
+      "Khazix",
+      "KogMaw",
+      "Naafiri",
+      "Nunu",
+      "RekSai",
+      "TahmKench",
+      "Trundle",
+      "Warwick"
+    ],
+    "sources": [
+      "https://www.leagueoflegends.com/en-us/champions/tahmkench/",
+      "https://www.leagueoflegends.com/en-us/champions/chogath/",
+      "https://www.leagueoflegends.com/en-us/champions/briar/",
+      "https://www.leagueoflegends.com/en-us/champions/gragas/",
+      "https://www.leagueoflegends.com/en-us/champions/gangplank/",
+      "https://www.leagueoflegends.com/en-us/champions/nunu/"
+    ],
+    "difficulty": 5
   },
   {
     "label": "Dark Sasuke",
@@ -812,7 +900,7 @@
   {
     "label": "Demacia",
     "status": "curated",
-    "description": "Sélection de champions liés à Demacia dans leur histoire.",
+    "description": "Personnages liés à la région de Demacia.",
     "championIds": [
       "Fiora",
       "Galio",
@@ -1203,6 +1291,32 @@
       "https://www.leagueoflegends.com/en-us/champions/volibear/",
       "https://www.leagueoflegends.com/en-us/champions/zeri/"
     ],
+    "difficulty": 5
+  },
+  {
+    "label": "Freljord",
+    "description": "Personnages liés à la région de Freljord.",
+    "championIds": [
+      "Anivia",
+      "Ashe",
+      "Braum",
+      "Gnar",
+      "Gragas",
+      "Lissandra",
+      "Nunu",
+      "Olaf",
+      "Ornn",
+      "Sejuani",
+      "Trundle",
+      "Tryndamere",
+      "Udyr",
+      "Volibear"
+    ],
+    "sources": [
+      "https://universe.leagueoflegends.com/en_US/region/freljord/",
+      "https://www.leagueoflegends.com/en-us/champions/gragas/"
+    ],
+    "status": "curated",
     "difficulty": 5
   },
   {
@@ -1667,6 +1781,14 @@
     "difficulty": 1
   },
   {
+    "label": "Hors rôle",
+    "status": "contextual",
+    "description": "Lors de la sélection des champions, filtre sur ton rôle et choisis un champion qui n’apparaît pas dans la liste proposée.",
+    "championIds": [],
+    "sources": [],
+    "difficulty": 5
+  },
+  {
     "label": "Îles Obscures",
     "status": "curated",
     "description": "Personnages liés à la région des Îles Obscures.",
@@ -1816,6 +1938,116 @@
     "difficulty": 3
   },
   {
+    "label": "Ionia",
+    "status": "curated",
+    "description": "Personnages liés à la région d’Ionia.",
+    "championIds": [
+      "Ahri",
+      "Akali",
+      "Hwei",
+      "Irelia",
+      "Ivern",
+      "Jhin",
+      "Karma",
+      "Kayn",
+      "Kennen",
+      "LeeSin",
+      "Lillia",
+      "MasterYi",
+      "MonkeyKing",
+      "Rakan",
+      "Sett",
+      "Shen",
+      "Syndra",
+      "Varus",
+      "Xayah",
+      "Yasuo",
+      "Yone",
+      "Yunara",
+      "Zaahen",
+      "Zed"
+    ],
+    "sources": [
+      "https://universe.leagueoflegends.com/en_US/region/ionia/",
+      "https://www.leagueoflegends.com/en-gb/champions/yunara/"
+    ],
+    "difficulty": 4
+  },
+  {
+    "label": "Jungle",
+    "status": "curated",
+    "description": "Champions pouvant se jouer en jungle.",
+    "championIds": [
+      "Amumu",
+      "Belveth",
+      "Brand",
+      "Briar",
+      "Chogath",
+      "Darius",
+      "Diana",
+      "DrMundo",
+      "Ekko",
+      "Elise",
+      "Evelynn",
+      "Fiddlesticks",
+      "Gragas",
+      "Graves",
+      "Gwen",
+      "Hecarim",
+      "Ivern",
+      "JarvanIV",
+      "Jax",
+      "Karthus",
+      "Kayn",
+      "Khazix",
+      "Kindred",
+      "LeeSin",
+      "Lillia",
+      "Maokai",
+      "MasterYi",
+      "Morgana",
+      "Naafiri",
+      "Nidalee",
+      "Nocturne",
+      "Nunu",
+      "Olaf",
+      "Pantheon",
+      "Poppy",
+      "Qiyana",
+      "Rammus",
+      "RekSai",
+      "Rell",
+      "Rengar",
+      "Rumble",
+      "Sejuani",
+      "Shaco",
+      "Shen",
+      "Shyvana",
+      "Skarner",
+      "Sylas",
+      "Taliyah",
+      "Talon",
+      "Teemo",
+      "Trundle",
+      "Udyr",
+      "Vi",
+      "Viego",
+      "Volibear",
+      "Warwick",
+      "MonkeyKing",
+      "XinZhao",
+      "Zaahen",
+      "Zac",
+      "Zed",
+      "Zyra"
+    ],
+    "sources": [
+      "https://www.leagueoflegends.com/en-us/champions/"
+    ],
+    "difficulty": 4,
+    "ignoreRoleFilter": true
+  },
+  {
     "label": "Kawaï",
     "status": "curated",
     "description": "Champions à l’apparence mignonne.",
@@ -1903,6 +2135,40 @@
       "https://www.leagueoflegends.com/en-us/champions/zyra/"
     ],
     "difficulty": 4
+  },
+  {
+    "label": "Lunettes",
+    "status": "curated",
+    "description": "Champions portant des lunettes, y compris des lunettes de protection ou relevées sur la tête, dans leur apparence de base.",
+    "championIds": [
+      "Corki",
+      "Ezreal",
+      "Heimerdinger",
+      "MasterYi",
+      "Renata",
+      "Rumble",
+      "Teemo",
+      "Twitch",
+      "Vayne",
+      "Vi",
+      "Zeri",
+      "Ziggs"
+    ],
+    "sources": [
+      "https://www.leagueoflegends.com/en-us/champions/corki/",
+      "https://www.leagueoflegends.com/en-us/champions/ezreal/",
+      "https://www.leagueoflegends.com/en-us/champions/heimerdinger/",
+      "https://www.leagueoflegends.com/en-us/champions/masteryi/",
+      "https://www.leagueoflegends.com/en-us/champions/renata/",
+      "https://www.leagueoflegends.com/en-us/champions/rumble/",
+      "https://www.leagueoflegends.com/en-us/champions/teemo/",
+      "https://www.leagueoflegends.com/en-us/champions/twitch/",
+      "https://www.leagueoflegends.com/en-us/champions/vayne/",
+      "https://www.leagueoflegends.com/en-us/champions/vi/",
+      "https://www.leagueoflegends.com/en-us/champions/zeri/",
+      "https://www.leagueoflegends.com/en-us/champions/ziggs/"
+    ],
+    "difficulty": 5
   },
   {
     "label": "Métal",
@@ -2102,7 +2368,7 @@
   {
     "label": "Néant",
     "status": "curated",
-    "description": "Champions associés à la région du Néant.",
+    "description": "Personnages liés à la région du Néant.",
     "championIds": [
       "Belveth",
       "Chogath",
@@ -2225,7 +2491,7 @@
   {
     "label": "Noxus",
     "status": "curated",
-    "description": "Sélection de champions liés à Noxus dans leur histoire.",
+    "description": "Personnages liés à la région de Noxus.",
     "championIds": [
       "Ambessa",
       "Briar",
@@ -2536,7 +2802,7 @@
   {
     "label": "Piltover",
     "status": "curated",
-    "description": "Sélection de champions liés à Piltover dans leur histoire.",
+    "description": "Personnages liés à la région de Piltover.",
     "championIds": [
       "Caitlyn",
       "Camille",
@@ -2577,6 +2843,22 @@
       "https://universe.leagueoflegends.com/en_US/region/bilgewater/"
     ],
     "difficulty": 5
+  },
+  {
+    "label": "Plus basse maîtrise",
+    "status": "contextual",
+    "description": "Lors de la selection des champions, filtre sur ton rôle, trie par niveau de maîtrise et choisis le dernier champion de la liste.",
+    "championIds": [],
+    "sources": [],
+    "difficulty": 5
+  },
+  {
+    "label": "Plus haute maîtrise",
+    "status": "contextual",
+    "description": "Lors de la selection des champions, filtre sur ton rôle, trie par niveau de maîtrise et choisis le premier champion de la liste.",
+    "championIds": [],
+    "sources": [],
+    "difficulty": 1
   },
   {
     "label": "Point & click",
@@ -2883,7 +3165,7 @@
     "sources": [
       "https://www.leagueoflegends.com/en-us/champions/seraphine/"
     ],
-    "difficulty": 5
+    "difficulty": 3
   },
   {
     "label": "Rouge",
@@ -2914,6 +3196,36 @@
       "https://www.leagueoflegends.com/en-us/champions/shaco/",
       "https://www.leagueoflegends.com/en-us/champions/swain/",
       "https://www.leagueoflegends.com/en-us/champions/vladimir/"
+    ],
+    "difficulty": 3
+  },
+  {
+    "label": "Shapeshifter",
+    "status": "curated",
+    "description": "Champions pouvant changer de forme ou se transformer grâce à leur kit de sorts.",
+    "championIds": [
+      "Belveth",
+      "Elise",
+      "Gnar",
+      "Jayce",
+      "Kayn",
+      "KSante",
+      "Nasus",
+      "Neeko",
+      "Nidalee",
+      "Quinn",
+      "Renekton",
+      "Shyvana",
+      "Swain",
+      "Viego"
+    ],
+    "sources": [
+      "https://www.leagueoflegends.com/en-us/champions/elise/",
+      "https://www.leagueoflegends.com/en-us/champions/swain/",
+      "https://www.leagueoflegends.com/en-us/champions/shyvana/",
+      "https://www.leagueoflegends.com/en-us/champions/jayce/",
+      "https://www.leagueoflegends.com/en-us/champions/neeko/",
+      "https://www.leagueoflegends.com/en-us/champions/nidalee/"
     ],
     "difficulty": 5
   },
@@ -3040,6 +3352,34 @@
       "https://www.leagueoflegends.com/en-us/champions/yuumi/"
     ],
     "difficulty": 2
+  },
+  {
+    "label": "Shurima",
+    "status": "curated",
+    "description": "Personnages liés à la région de Shurima.",
+    "championIds": [
+      "Akshan",
+      "Amumu",
+      "Azir",
+      "Kaisa",
+      "Kassadin",
+      "KSante",
+      "Malzahar",
+      "Naafiri",
+      "Nasus",
+      "Rammus",
+      "RekSai",
+      "Renekton",
+      "Sivir",
+      "Taliyah",
+      "Xerath"
+    ],
+    "sources": [
+      "https://universe.leagueoflegends.com/en_US/region/shurima/",
+      "https://www.leagueoflegends.com/en-us/champions/naafiri/",
+      "https://universe.leagueoflegends.com/en_US/champion/ksante/"
+    ],
+    "difficulty": 4
   },
   {
     "label": "Skillshot",
@@ -3558,6 +3898,29 @@
     "difficulty": 2
   },
   {
+    "label": "Targon",
+    "description": "Personnages liés à la région de Targon.",
+    "championIds": [
+      "Aphelios",
+      "AurelionSol",
+      "Diana",
+      "Kayle",
+      "Leona",
+      "Malphite",
+      "Morgana",
+      "Pantheon",
+      "Soraka",
+      "Taric",
+      "Zoe"
+    ],
+    "sources": [
+      "https://universe.leagueoflegends.com/en_US/region/mount-targon/",
+      "https://www.leagueoflegends.com/en-us/news/dev/champion-insights-aphelios/"
+    ],
+    "status": "curated",
+    "difficulty": 5
+  },
+  {
     "label": "Terre",
     "status": "curated",
     "description": "Champions associés à l’élément terre.",
@@ -3589,6 +3952,14 @@
       "https://www.leagueoflegends.com/en-us/champions/taliyah/",
       "https://www.leagueoflegends.com/en-us/champions/taric/"
     ],
+    "difficulty": 5
+  },
+  {
+    "label": "Type de dégâts inversé",
+    "status": "contextual",
+    "description": "Choisis un champion et joue-le avec un build du type de dégâts opposé à son build habituel : AD au lieu d’AP, ou AP au lieu d’AD.",
+    "championIds": [],
+    "sources": [],
     "difficulty": 5
   },
   {
@@ -3669,7 +4040,7 @@
       "https://www.leagueoflegends.com/en-us/champions/warwick/",
       "https://www.leagueoflegends.com/en-us/champions/zac/"
     ],
-    "difficulty": 5
+    "difficulty": 3
   },
   {
     "label": "Vieux",
@@ -3774,7 +4145,7 @@
       "https://www.leagueoflegends.com/en-us/champions/velkoz/",
       "https://www.leagueoflegends.com/en-us/champions/xayah/"
     ],
-    "difficulty": 4
+    "difficulty": 3
   },
   {
     "label": "Yordle",
@@ -3817,7 +4188,7 @@
   {
     "label": "Zaun",
     "status": "curated",
-    "description": "Sélection de champions liés à Zaun dans leur histoire.",
+    "description": "Personnages liés à la région de Zaun.",
     "championIds": [
       "Blitzcrank",
       "DrMundo",

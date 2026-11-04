@@ -31,7 +31,7 @@ describe('champion suggestions', () => {
       for (const role of roles) {
         for (const champion of getChampionSuggestions(theme.label, role).champions) {
           expect(theme.championIds).toContain(champion.id)
-          expect(champion.roles).toContain(role)
+          if (theme.ignoreRoleFilter !== true) expect(champion.roles).toContain(role)
         }
       }
     }
@@ -45,4 +45,22 @@ describe('champion suggestions', () => {
       expect(getChampionSuggestions(label, 'mid').champions).toEqual([])
     }
   })
+})
+
+it('shows the full tank class at every position for the damage items challenge', () => {
+  const expected = champions.filter((champion) => champion.classes.includes('Tank')).map((champion) => champion.id)
+  for (const role of roles) {
+    const result = getChampionSuggestions('Classe tank, items dégats', role)
+    expect(result.champions.map((champion) => champion.id)).toEqual(expected)
+    expect(result.theme?.difficulty).toBe(5)
+  }
+})
+
+it('suggests every catalog jungler at every position for the Jungle theme', () => {
+  const expected = champions.filter((champion) => champion.roles.includes('jungle')).map((champion) => champion.id)
+  for (const role of roles) {
+    const result = getChampionSuggestions('Jungle', role)
+    expect(result.champions.map((champion) => champion.id)).toEqual(expected)
+    expect(result.theme?.difficulty).toBe(4)
+  }
 })
