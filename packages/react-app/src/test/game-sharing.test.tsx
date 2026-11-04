@@ -31,7 +31,6 @@ describe('game sharing', () => {
       (url: URL) => url.searchParams.set('theme', 'Inconnu'),
       (url: URL) => url.searchParams.delete('bot'),
       (url: URL) => url.searchParams.set('top', 'Inconnu'),
-      (url: URL) => url.searchParams.set('top', 'Niyuzu'),
       (url: URL) => url.searchParams.set('mid', url.searchParams.get('bot') ?? ''),
       (url: URL) => url.searchParams.append('theme', themes[0]),
       (url: URL) => url.searchParams.append('top', 'Skel'),

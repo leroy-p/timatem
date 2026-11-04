@@ -13,7 +13,7 @@ export function readGameUrl(url: URL, players: Player[], themes: string[]): Game
   for (const role of roles) {
     const username = params.get(role)
     if (!username || params.getAll(role).length !== 1) return null
-    if (!players.some((player) => player.username === username && player.roles.includes(role))) return null
+    if (!players.some((player) => player.username === username)) return null
     assignments.push({ username, role })
   }
   if (new Set(assignments.map((assignment) => assignment.username)).size !== roles.length) return null

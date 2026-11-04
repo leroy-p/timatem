@@ -27,7 +27,9 @@ export default function Root() {
           <GameResult {...game.result} onDraw={game.draw} onReset={game.reset} />
         ) : (
           <PlayerForm
-            players={players}
+            players={game.players}
+            onSaveRoles={game.setPlayerRoles}
+            disabledReason={game.disabledReason}
             selected={game.selected}
             canStart={game.canStart}
             onSelect={game.selectPlayer}
