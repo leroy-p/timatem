@@ -3,8 +3,6 @@ import styled, { keyframes } from 'styled-components'
 import { Panel } from './game-styles'
 
 const ROW_HEIGHT = 96
-const SPIN_ROWS = 64
-const DISTANCE = (SPIN_ROWS - 1) * ROW_HEIGHT
 export const MIN_SPIN_DURATION = 6000
 export const MAX_SPIN_DURATION = 10000
 export const RESULT_HOLD_DURATION = 2000
@@ -21,9 +19,15 @@ export default function ThemeRoulette({ themes, theme, onComplete }: Props) {
   )
   const [settled, setSettled] = useState(false)
   const [entries] = useState(() => {
-    const pool = themes.length ? themes : [theme]
-    const randomTheme = () => pool[Math.floor(Math.random() * pool.length)]
-    return [randomTheme(), theme, ...Array.from({ length: SPIN_ROWS }, randomTheme)]
+    const pool = [...new Set(themes)].filter((entry) => entry !== theme)
+    for (let index = pool.length - 1; index > 0; index--) {
+      const other = Math.floor(Math.random() * (index + 1))
+      ;[pool[index], pool[other]] = [pool[other], pool[index]]
+    }
+    // Keep the chosen theme in the middle row when the wheel stops.
+    const sequence = [pool.shift() ?? '', theme, ...pool]
+    while (sequence.length < 3) sequence.push('')
+    return sequence
   })
 
   useEffect(() => {
@@ -46,7 +50,7 @@ export default function ThemeRoulette({ themes, theme, onComplete }: Props) {
       <Caption>{settled ? 'Ton thème' : 'Quel sera ton thème ?'}</Caption>
       <Window aria-hidden="true">
         <Selection />
-        <Track $duration={duration}>
+        <Track $duration={duration} $distance={(entries.length - 3) * ROW_HEIGHT}>
           {entries.map((entry, index) => (
             <Entry key={`${index}-${entry}`}>{entry}</Entry>
           ))}
@@ -60,7 +64,7 @@ export default function ThemeRoulette({ themes, theme, onComplete }: Props) {
 }
 
 const spin = keyframes`
-  from { transform: translateY(-${DISTANCE}px); }
+  from { transform: translateY(var(--roulette-start)); }
   to { transform: translateY(0); }
 `
 const RoulettePanel = styled(Panel)`
@@ -90,7 +94,8 @@ const Selection = styled.div`
   background: #35304f;
   box-shadow: 0 0 24px rgb(185 179 255 / 15%);
 `
-const Track = styled.div<{ $duration: number }>`
+const Track = styled.div<{ $duration: number; $distance: number }>`
+  --roulette-start: -${({ $distance }) => $distance}px;
   display: flex;
   flex-direction: column;
   position: relative;

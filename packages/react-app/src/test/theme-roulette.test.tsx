@@ -102,4 +102,14 @@ describe('theme roulette', () => {
     act(() => vi.advanceTimersByTime(1))
     expect(onComplete).toHaveBeenCalledTimes(1)
   })
+  it('displays each theme exactly once, including the chosen theme', () => {
+    const labels = themes.map((entry) => entry.label)
+    render(<ThemeRoulette themes={[...labels, ...labels]} theme="Animaux" onComplete={vi.fn()} />)
+    for (const label of labels) expect(screen.getAllByText(label)).toHaveLength(1)
+  })
+
+  it('does not repeat the chosen theme when the available list is empty', () => {
+    render(<ThemeRoulette themes={[]} theme="Animaux" onComplete={vi.fn()} />)
+    expect(screen.getAllByText('Animaux')).toHaveLength(1)
+  })
 })
