@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import styled from 'styled-components'
 import type { Assignment } from '../hooks/use-game'
+import { usePlayerIdentity } from '../hooks/use-player-identity'
 import ChampionDialog from './champion-dialog'
 import { Button, Panel } from './game-styles'
+import PlayerIdentityDialog from './player-identity-dialog'
 import ShareResult from './share-result'
 
 interface Props {
@@ -13,6 +15,7 @@ interface Props {
 }
 
 export default function GameResult({ theme, assignments, onDraw, onReset }: Props) {
+  const identity = usePlayerIdentity(assignments)
   const [activeAssignment, setActiveAssignment] = useState<Assignment | null>(null)
 
   return (
@@ -27,7 +30,11 @@ export default function GameResult({ theme, assignments, onDraw, onReset }: Prop
         </ResultHeader>
         <Players>
           {assignments.map(({ username, role }) => (
-            <PlayerRow key={role}>
+            <PlayerRow
+              key={role}
+              $highlighted={identity.username === username}
+              aria-current={identity.username === username ? 'true' : undefined}
+            >
               <strong>{username}</strong>
               <RoleDetails>
                 <RoleLabel>{role}</RoleLabel>
@@ -64,7 +71,10 @@ export default function GameResult({ theme, assignments, onDraw, onReset }: Prop
           Changer les joueurs
         </Button>
       </Actions>
-      {activeAssignment && (
+      {identity.isOpen && (
+        <PlayerIdentityDialog assignments={assignments} onChoose={identity.choose} onClose={identity.dismiss} />
+      )}
+      {!identity.isOpen && activeAssignment && (
         <ChampionDialog theme={theme} assignment={activeAssignment} onClose={() => setActiveAssignment(null)} />
       )}
     </Panel>
@@ -135,7 +145,7 @@ const Players = styled.ul`
   margin: 24px 0 0;
   list-style: none;
 `
-const PlayerRow = styled.li`
+const PlayerRow = styled.li<{ $highlighted: boolean }>`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -143,7 +153,8 @@ const PlayerRow = styled.li`
   gap: 12px;
   padding: 12px;
   border-radius: 8px;
-  background: #25252f;
+  background: ${({ $highlighted }) => ($highlighted ? '#35304f' : '#25252f')};
+  box-shadow: ${({ $highlighted }) => ($highlighted ? 'inset 0 0 0 2px #b9b3ff' : 'none')};
 `
 const Actions = styled.div`
   display: flex;

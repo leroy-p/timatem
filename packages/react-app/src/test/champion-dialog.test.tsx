@@ -1,11 +1,14 @@
 import { cleanup, fireEvent, render, screen } from '@testing-library/react'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import GameResult from '../components/game-result'
+import players from '../data/players.json'
+import { getAssignments } from '../hooks/use-game'
 
 describe('champion popup', () => {
   const originalShowModal = Object.getOwnPropertyDescriptor(HTMLDialogElement.prototype, 'showModal')
   const originalClose = Object.getOwnPropertyDescriptor(HTMLDialogElement.prototype, 'close')
   beforeEach(() => {
+    window.localStorage.setItem('username', 'Niyuzu')
     Object.defineProperty(HTMLDialogElement.prototype, 'showModal', {
       configurable: true,
       value: function (this: HTMLDialogElement) {
@@ -21,6 +24,8 @@ describe('champion popup', () => {
   })
   afterEach(() => {
     cleanup()
+    window.localStorage.clear()
+    vi.restoreAllMocks()
     for (const [name, descriptor] of [
       ['showModal', originalShowModal],
       ['close', originalClose],
@@ -67,5 +72,55 @@ describe('champion popup', () => {
   it('explains an empty intersection', () => {
     show('Tank', 'bot')
     expect(screen.getByText(/Aucun champion n’est renseigné/)).toBeInTheDocument()
+  })
+  const assignments = getAssignments(players.slice(0, 5))[0]
+
+  function renderIdentity() {
+    return render(<GameResult theme="Yordle" assignments={assignments} onDraw={vi.fn()} onReset={vi.fn()} />)
+  }
+
+  it('highlights a saved player without asking again', () => {
+    window.localStorage.setItem('username', assignments[0].username)
+    renderIdentity()
+    expect(screen.queryByRole('dialog', { name: 'Qui es-tu ?' })).not.toBeInTheDocument()
+    expect(screen.getByText(assignments[0].username).closest('li')).toHaveAttribute('aria-current', 'true')
+  })
+
+  it('offers the five players and saves the chosen identity', () => {
+    window.localStorage.clear()
+    const view = renderIdentity()
+    expect(screen.getByRole('dialog', { name: 'Qui es-tu ?' })).toBeInTheDocument()
+    for (const assignment of assignments)
+      expect(screen.getByRole('option', { name: assignment.username })).toBeInTheDocument()
+    const username = assignments[0].username
+    fireEvent.change(screen.getByRole('combobox', { name: 'Ton joueur' }), { target: { value: username } })
+    expect(window.localStorage.getItem('username')).toBe(username)
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
+    expect(screen.getByText(username).closest('li')).toHaveAttribute('aria-current', 'true')
+    const rerolled = getAssignments(players.slice(0, 5)).at(-1) ?? assignments
+    view.rerender(<GameResult theme="Bleu" assignments={rerolled} onDraw={vi.fn()} onReset={vi.fn()} />)
+    expect(screen.getByText(username).closest('li')).toHaveAttribute('aria-current', 'true')
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
+  })
+
+  it('asks again when the saved username is not in the current team', () => {
+    window.localStorage.setItem('username', 'Joueur absent')
+    renderIdentity()
+    expect(screen.getByRole('dialog', { name: 'Qui es-tu ?' })).toBeInTheDocument()
+  })
+
+  it('remains usable when localStorage is unavailable', () => {
+    vi.spyOn(Storage.prototype, 'getItem').mockImplementation(() => {
+      throw new Error('Blocked')
+    })
+    vi.spyOn(Storage.prototype, 'setItem').mockImplementation(() => {
+      throw new Error('Blocked')
+    })
+    renderIdentity()
+    fireEvent.change(screen.getByRole('combobox', { name: 'Ton joueur' }), {
+      target: { value: assignments[0].username },
+    })
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
+    expect(screen.getByText(assignments[0].username).closest('li')).toHaveAttribute('aria-current', 'true')
   })
 })
