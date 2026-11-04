@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
 import { type Assignment, type Player, roles } from '../types/game'
 import { clearGameUrl, createGameUrl, type GameResultData, readGameUrl } from '../utils/game-url'
 
@@ -31,6 +31,8 @@ export function useGame(players: Player[], themes: string[], availableThemes = t
   )
   const [result, setResult] = useState<GameResultData | null>(initialResult)
   const [error, setError] = useState('')
+  const [isDrawing, setIsDrawing] = useState(false)
+  const finishDraw = useCallback(() => setIsDrawing(false), [])
   const canStart = selected.every(Boolean) && new Set(selected).size === 5
 
   function selectPlayer(index: number, username: string) {
@@ -39,7 +41,7 @@ export function useGame(players: Player[], themes: string[], availableThemes = t
   }
 
   function draw() {
-    if (!canStart) return
+    if (!canStart || isDrawing) return
     const possibilities = getAssignments(players.filter((player) => selected.includes(player.username)))
     if (!possibilities.length || !themes.length) {
       setError('Aucun tirage possible avec ces joueurs et les thèmes disponibles.')
@@ -51,17 +53,19 @@ export function useGame(players: Player[], themes: string[], availableThemes = t
       assignments: possibilities[Math.floor(Math.random() * possibilities.length)],
     }
     setResult(nextResult)
+    setIsDrawing(true)
     if (new URL(window.location.href).searchParams.has('theme')) {
       window.history.replaceState(window.history.state, '', createGameUrl(window.location.href, nextResult))
     }
   }
 
   function reset() {
+    setIsDrawing(false)
     setSelected(new Array(5).fill(''))
     setResult(null)
     setError('')
     clearGameUrl()
   }
 
-  return { selected, result, error, canStart, selectPlayer, draw, reset }
+  return { selected, result, error, canStart, isDrawing, finishDraw, selectPlayer, draw, reset }
 }

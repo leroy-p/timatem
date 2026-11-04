@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import GameResult from '../components/game-result'
 import PlayerForm from '../components/player-form'
+import ThemeRoulette from '../components/theme-roulette'
 import players from '../data/players.json'
 import themes from '../data/themes.json'
 import { useGame } from '../hooks/use-game'
@@ -16,7 +17,13 @@ export default function Root() {
     <Layout>
       <Container>
         <h1>Timatem</h1>
-        {game.result ? (
+        {game.isDrawing && game.result ? (
+          <ThemeRoulette
+            themes={themes.map((theme) => theme.label)}
+            theme={game.result.theme}
+            onComplete={game.finishDraw}
+          />
+        ) : game.result ? (
           <GameResult {...game.result} onDraw={game.draw} onReset={game.reset} />
         ) : (
           <PlayerForm
