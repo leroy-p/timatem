@@ -7,6 +7,15 @@
     ]
   },
   {
+    "username": "Erberack",
+    "roles": [
+      "top",
+      "jungle",
+      "bot",
+      "support"
+    ]
+  },
+  {
     "username": "Hyure",
     "roles": [
       "top",
@@ -23,6 +32,12 @@
       "jungle",
       "mid",
       "support"
+    ]
+  },
+  {
+    "username": "Mephysto",
+    "roles": [
+      "top"
     ]
   },
   {
