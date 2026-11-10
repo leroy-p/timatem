@@ -1974,6 +1974,14 @@
     "difficulty": 4
   },
   {
+    "label": "Jeu libre",
+    "status": "contextual",
+    "description": "Choisis le champion de ton choix.",
+    "championIds": [],
+    "sources": [],
+    "difficulty": 1
+  },
+  {
     "label": "Jungle",
     "status": "curated",
     "description": "Champions pouvant se jouer en jungle.",
